@@ -1,28 +1,180 @@
 <!DOCTYPE html>
-<html>
-<title>Webpage</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
   <style>
-    background-color: lightblue;
+    /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Services Section */
+.services-section .service {
+    margin-bottom: 40px;
+}
+
+.services-section .service h3 {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-section .project {
+    margin-bottom: 40px;
+}
+
+.projects-section .project h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
   </style>
-  
+</head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Raghav Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="w3-container">
-  <h1>RAGHAV TYAGI Cloud & DevOps Engineer !! </h1>
-  <p>The w3-color classes defines background colors for HTML elements:</p>
-</div>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm John, a passionate web developer with a keen interest in creating user-friendly and responsive websites.</p>
+            <p>I specialize in HTML, CSS, JavaScript, and various web development frameworks. My goal is to deliver high-quality solutions that meet the client's needs.</p>
+        </div>
+    </section>
 
-<div class="w3-container w3-red">
-  <h2>India</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-</div>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>I create visually appealing and user-friendly website designs tailored to your brand and target audience.</p>
+            </div>
+            <div class="service">
+                <h3>Frontend Development</h3>
+                <p>Using HTML, CSS, and JavaScript, I bring website designs to life, ensuring they are responsive and functional across all devices.</p>
+            </div>
+            <div class="service">
+                <h3>Website Maintenance</h3>
+                <p>I provide ongoing support and maintenance services to keep your website running smoothly and up-to-date.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="w3-container w3-green">
-  <h2>Bharat</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-</div>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio website showcasing my skills and projects.</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>A fully functional e-commerce website built with HTML, CSS, JavaScript, and backend technologies.</p>
+            </div>
+            <div class="project">
+                <h3>Blog Application</h3>
+                <p>An interactive blog application allowing users to create, edit, and share blog posts.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you're interested in collaborating or have any inquiries, feel free to reach out to me:</p>
+            <p>Email: john@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-</html> 
+</html>
